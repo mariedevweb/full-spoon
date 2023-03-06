@@ -1,0 +1,33 @@
+.VuePagination {
+    text-align: center;
+    font-size: rem(12);
+    letter-spacing: (0.5);
+    nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    ul.pagination {
+        display: flex;
+        margin: 20px auto 8px;
+    }
+    li.VuePagination__pagination-item {
+        font-size: rem(12);
+        padding: 2px 8px;
+        font-weight: 500;
+        cursor: pointer;
+        border-radius: 25px;
+        transition: all $transition-duration ease-in;
+        &:hover {
+            background-color: rgba($secondary-bgcolor, 0.24);
+        }
+    }
+    li.VuePagination__pagination-item.disabled {
+        cursor: not-allowed;
+        opacity: 0.2;
+    }
+    .page-item.active {
+        text-decoration: underline;
+    }
+
+}
